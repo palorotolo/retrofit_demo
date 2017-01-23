@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/common_padding"
+    android:orientation="vertical"
+    tools:context="me.maybewill.weather.Activity.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/edittext"
+        android:hint="输入城市名称"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:layout_below="@id/edittext"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/listView"
+        android:layout_height="match_parent"></ListView>
+
+
+    <Button
+        android:id="@+id/button"
+        android:paddingBottom="@dimen/common_button_padding"
+        android:paddingTop="@dimen/common_button_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询" />
+</LinearLayout>
